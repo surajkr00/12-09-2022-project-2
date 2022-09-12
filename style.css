@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.s_navbar_right a{
+    padding: 0 1rem;
+    text-decoration: none;
+    position: relative;
+
+}
+.s_navbar_right{
+
+}
+.s_navbar_right a::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 2px solid pink;
+    top: 1.5rem;
+    left: 0;
+    
+}
+.s_navbar_right a:hover{
+    width: 100%;
+}
+.s_navbar_left h2{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    color: greenyellow;
+}
+.s_navbar_left{
+    animation: logo 2s infinite 1s linear alternate-reverse;
+
+}
+.s_banner{
+    height: 100%;
+    margin: 5rem 1rem;
+}
+.s_banner img{
+    width: 60%;
+}
+.s_txt h3{
+    position: relative;
+}
+.s_txt h3{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.s_txt h3::after{
+    position: absolute;
+    content: "";
+    width: 60%;
+    border: 1px solid green;
+    top: 1.4rem;
+    left: 6.5rem;
+}
+.s_txt h4{
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+.s_txt p{
+    font-size: 14px;
+    font-weight: 300;
+
+}
+.flex_1{
+    flex: 1;
+}
+.flex_2{
+    flex: 2;
+}
+@keyframes logo{
+    from{
+        padding-left: 40px;
+    }
+    to{
+        padding-right: 40px;
+    }
+}
